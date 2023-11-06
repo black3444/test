@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="" />
+	<title>Certificate Request</title>
+	<link rel="stylesheet" href="../resources/css/reset.css" />
+	<link rel="stylesheet" href="../resources/css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="../resources/css/all.min.css" />
+	<link rel="stylesheet" href="../resources/css/slick.css" />
+	<link rel="stylesheet" href="../resources/css/common.css" />
+	<link rel="stylesheet" href="../resources/css/layout.css" />
+	<link rel="stylesheet" href="../resources/css/etc.css" />
+
+	<script src="../resources/js/jquery-3.3.1.min.js"></script>
+	<script src="../resources/js/jquery-ui.min.js"></script>
+	<script src="../resources/js/slick.min.js"></script>
+	<script src="../resources/js/common.js"></script>
+</head>
+<body>
+	<header id="pop_header">
+		<h1>Certificate Request</h1>
+		<button type="button" class="btn_pop_close" onclick="self.close();">닫기</button>
+	</header>
+
+	<div id="pop_container">
+		<div class="frame_box">
+			<div class="frame_box_cell">
+				<button type="button" class="btn btn_c_normal">Request</button>
+				<button type="button" class="btn btn_c_normal">Save Temporarily</button>
+				<button type="button" class="btn btn_c_normal">Report</button>
+			</div>
+		</div>
+		<dl class="doc_frame">
+			<dt>
+				<span class="stit">기본정보(Basic Information)</span>
+				<button class="icon_close">접기</button>
+			</dt>
+			<dd>
+				<div class="ul_tbl_box">
+					<ul class="ul_tbl">
+						<li class="w_triple">
+							<span class="head"><label for="" class="required">Nation</label></span>
+							<ul class="input_ul_box">
+								<li class="type_p_1">
+									<input type="text" id="" name="" placeholder="" class="input_txt" />
+									<button type="button" class="btn_s btn_popup">국가 List(Country)</button>									
+								</li>
+							</ul>
+						</li>
+						<li class="w_triple">
+							<span class="head"><label for="" class="required">Product/Unit</label></span>
+							<ul class="input_ul_box">
+								<li class="type_p_1">
+									<input type="text" id="" name="" placeholder="" class="input_txt" />
+									<button type="button" class="btn_s btn_popup">Product/Unit</button>									
+								</li>
+							</ul>
+						</li>
+						<li class="w_triple">
+							<span class="head"><label for="">Certificate ID</label></span>
+							<input type="text" id="" name="" placeholder="" class="input_txt" />
+						</li>
+						<li class="w_triple">
+							<span class="head"><label for="" class="required">Certificate Authorities</label></span>
+							<ul class="input_ul_box">
+								<li class="type_p_1">
+									<input type="text" id="" name="" placeholder="" class="input_txt" />
+									<button type="button" class="btn_s btn_popup">인증기관 List(Certificate Authorities)</button>									
+								</li>
+							</ul>
+						</li>
+						<li class="w_triple">
+							<span class="head"><label for="">Sample Count</label></span>
+							<input type="text" id="" name="" placeholder="" class="input_txt" />
+						</li>
+						<li class="w_triple">
+							<span class="head"><label for="">Registration By</label></span>
+							<input type="text" id="" name="" placeholder="" class="input_txt" />
+						</li>
+						<li class="w_triple">
+							<span class="head"><label for="" class="required">Part No</label></span>
+							<ul class="input_ul_box">
+								<li class="type_p_1">
+									<input type="text" id="" name="" placeholder="" class="input_txt" />
+									<button type="button" class="btn_s btn_popup">Materiallist</button>									
+								</li>
+							</ul>
+						</li>
+						<li class="w_triple">
+							<span class="head"><label for="">Description</label></span>
+							<input type="text" id="" name="" placeholder="" class="input_txt" />
+						</li>
+						<li class="w_triple">
+							<span class="head"><label for="">Registration Date</label></span>
+							<input type="text" id="" name="" placeholder="" class="input_txt" />
+						</li>
+						<li class="w_all">
+							<span class="head"><label for="" class="required">Title</label></span>
+							<input type="text" id="" name="" placeholder="" class="input_txt" />
+						</li>
+						<li class="w_all">
+							<span class="head"><label for="">CC</label></span>
+							<ul class="input_ul_box">
+								<li class="type_p_1">
+									<input type="text" id="" name="" placeholder="" class="input_txt" />
+									<button type="button" class="btn_s btn_popup">조직도 List(Org Chart)</button>									
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</dd>
+			<dt>
+				<span class="stit">의뢰내용(Request Contents)</span>
+				<button class="icon_close">접기</button>
+			</dt>
+			<dd>
+				<textarea rows="5" cols="50" id="" title="의뢰내용 입력" class="textarea h200p"></textarea>
+			</dd>
+			<dt>
+				<span class="stit">필수첨부문서(Attach Document)</span>
+				<button class="icon_close">접기</button>
+			</dt>
+			<dd>
+				<a href="javascript:void(0);" class="btn_files"><em>원품의서 다운로드</em></a>
+				<a href="javascript:void(0);" class="btn_files"><em>원품의서 다운로드</em></a>
+				<a href="javascript:void(0);" class="btn_files"><em>원품의서 다운로드</em></a>
+			</dd>
+			<dt>
+				<span class="stit">첨부파일(Attachment)</span>
+				<button class="icon_close">접기</button>
+			</dt>
+			<dd>
+				<div class="ibsheet h100p"></div>
+				<div class="pagination base2_paging w100 algC"></div>
+			</dd>
+		</dl>
+		<div class="frame_box mt10">
+			<div class="frame_box_cell">
+				<button type="button" class="btn btn_c_normal">Request</button>
+				<button type="button" class="btn btn_c_normal">Save Temporarily</button>
+				<button type="button" class="btn btn_c_normal">Report</button>
+			</div>
+		</div>
+	</div>
+	<footer id="pop_footer"></footer>
+</body>
+</html>
